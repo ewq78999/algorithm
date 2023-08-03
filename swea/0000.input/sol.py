@@ -54,7 +54,28 @@ print(matrix)
 for row in matrix:
     # print(row)
     for item in row:
-        if item == 5:
+        if item == 10:
             print('5가 있습니다.')
         else:
             print('없습니다.')
+
+
+N, M = map(int, input().split())
+matrix = []
+
+for i in range(N):
+    numbers = list(map(int, input(). split()))
+    matrix.append(numbers)
+
+
+# 가로 우선 탐색
+# for row in range(len(matrix)):
+for row in range(N):
+    # for col in range(len(matrix(0))):
+    for col in range(M):
+        print(matrix[row][col])
+
+# 세로 우선 탐색
+for col in range(len(matrix[0])):
+    for row in range(len(matrix)):
+        print(matrix[row][col])
