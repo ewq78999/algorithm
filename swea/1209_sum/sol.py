@@ -4,7 +4,7 @@ sys.stdin = open('input.txt')
 T = int(input())
 
 for tc in range(1, T+1):
-    tc = int(input())
+    
     matrix = []
 
     for i in range(100):
