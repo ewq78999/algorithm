@@ -24,6 +24,7 @@ cat << EOF > "$problem/sol.py"
 import sys
 from pathlib import Path
 
+
 file_path = Path(__file__).parent
 input_path = file_path / 'input.txt'
 sys.stdin = open(input_path)
@@ -36,3 +37,5 @@ EOF
 
 echo "$problem/sol.py 파일이 생성되었습니다."
 echo "$problem/input.txt 파일이 생성되었습니다."
+
+# python selen.py "$problem"
